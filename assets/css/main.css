@@ -6,7 +6,7 @@
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
-  --background-color: #b43f3f; /* Background color for the entire website, including individual sections */
+  --background-color: #13251a; /* Background color for the entire website, including individual sections */
   --default-color: #303b44; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #303b44; /* Color for headings, subheadings and title throughout the website */
   --accent-color: #303b44; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
@@ -42,9 +42,9 @@
 # General Styling & Shared Classes
 --------------------------------------------------------------*/
 body {
-  color: #b43f3f;
+  color: #13251a;
   /* color: var(--default-color); */
-  background-color: #b43f3f;
+  background-color: #13251a;
   /* background-color: var(--background-color); */
   font-family: var(--default-font);
 }
@@ -126,10 +126,10 @@ h6 {
 # Global Header
 --------------------------------------------------------------*/
 .header {
-  --background-color: #ff8225;
+  --background-color: #649a7a;
   --default-color: #303b44;
   --heading-color: #303b44;
-  --contrast-color: #ff8225;
+  --contrast-color: #649a7a;
   color: var(--default-color);
   transition: all 0.5s;
   z-index: 997;
@@ -868,7 +868,7 @@ section,
   padding-top: 0px;
   margin-top: 0; /* reduce top padding to bring it closer to the hero */
   padding-bottom: 40px;
-  background-color: #b43f3f; /* Adjust as needed */
+  background-color: #13251a; /* Adjust as needed */
 }
 
 .download a {
@@ -903,7 +903,7 @@ section,
   align-items: center;
   justify-content: center;
   position: relative;
-  background-color: #b43f3f;
+  background-color: #13251a;
 
 }
 
@@ -1435,7 +1435,7 @@ section,
 
 .pricing-item {
   padding: 30px;
-  background-color: #f1dedd;
+  background-color: #649a7a;
   border-radius: 8px;
 }
 
@@ -1537,7 +1537,7 @@ section,
 # Contact Section
 --------------------------------------------------------------*/
 .contact .info-item {
-  background-color: #f1dedd;
+  background-color: #649a7a;
   /* background-color: var(--surface-color); */
   padding: 20px 0 30px 0;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
@@ -1754,4 +1754,34 @@ section,
 --------------------------------------------------------------*/
 .starter-section {
   /* Add your styles here */
+}
+
+#privacy_policy {
+  /* change the overall section background if you like */
+  background-color: #13251a;  
+} 
+#privacy_policy .pricing-item {
+  /* the white box behind your text */
+  background-color: #649a7a !important;  
+  color: #fff;
+}
+#privacy_policy .pricing-item h3,
+#privacy_policy .pricing-item p,
+#privacy_policy .pricing-item a {
+  color: #fff;
+}
+
+.contact .info-item {
+  /* new background */
+  background-color: #649a7a !important;
+  color: #fff;
+}
+.contact .info-item h3,
+.contact .info-item p {
+  color: #fff;
+}
+/* icon border + icon color */
+.contact .info-item i {
+  border-color: #fff !important;
+  color: #fff !important;
 }
